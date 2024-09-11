@@ -1,0 +1,322 @@
+{
+    "UNA": {
+        "name": "Service String Advice - UNA",
+        "elements": {
+            "101": {
+                "name": "Decimal point",
+                "requirement": "Mandatory",
+                "internal_mapping": "decimal_point"
+            },
+            "102": {
+                "name": "Segment terminator",
+                "requirement": "Mandatory",
+                "internal_mapping": "segment_terminator"
+            },
+            "103": {
+                "name": "Data element separator",
+                "requirement": "Mandatory",
+                "internal_mapping": "data_element_separator"
+            },
+            "104": {
+                "name": "Release indicator",
+                "requirement": "Mandatory",
+                "internal_mapping": "release_indicator"
+            },
+            "105": {
+                "name": "Sub-element separator",
+                "requirement": "Mandatory",
+                "internal_mapping": "sub_element_separator"
+            }
+        }
+    },
+    "UNH": {
+        "name": "Message Header - UNH",
+        "elements": {
+            "S009": {
+                "name": "Message Reference Number",
+                "requirement": "Mandatory",
+                "internal_mapping": "message_reference_number"
+            },
+            "S010": {
+                "name": "Message Type",
+                "requirement": "Mandatory",
+                "internal_mapping": "message_type"
+            }
+        }
+    },
+    "BGM": {
+        "name": "Beginning of Message - BGM",
+        "elements": {
+            "C002": {
+                "name": "Document/Message Number",
+                "requirement": "Mandatory",
+                "internal_mapping": "document_number"
+            },
+            "C080": {
+                "name": "Document Message Name",
+                "requirement": "Mandatory",
+                "internal_mapping": "document_message_name"
+            }
+        }
+    },
+    "DTM": {
+        "name": "Date/Time/Period - DTM",
+        "elements": {
+            "C507": {
+                "name": "Date/Time/Period",
+                "requirement": "Mandatory",
+                "internal_mapping": "date_time_period"
+            }
+        }
+    },
+    "NAD": {
+        "name": "Name and Address",
+        "elements": {
+            "Party function code qualifier": {
+                "name": "Party function code qualifier",
+                "requirement": "mandatory",
+                "internal_mapping": "party_function_code"
+            },
+            "Identification code": {
+                "name": "Identification code",
+                "requirement": "mandatory",
+                "internal_mapping": "identification_code"
+            },
+            "Code list qualifier and code list responsible agency code": {
+                "name": "Code list qualifier and code list responsible agency code",
+                "requirement": "optional",
+                "internal_mapping": "code_list_qualifier"
+            },
+            "Name": {
+                "name": "Name",
+                "requirement": "mandatory",
+                "internal_mapping": "name"
+            },
+            "Address line 1": {
+                "name": "Address line 1",
+                "requirement": "optional",
+                "internal_mapping": "address_line_1"
+            },
+            "City": {
+                "name": "City",
+                "requirement": "optional",
+                "internal_mapping": "city"
+            },
+            "State or province": {
+                "name": "State or province",
+                "requirement": "optional",
+                "internal_mapping": "state_province"
+            },
+            "Postal code": {
+                "name": "Postal code",
+                "requirement": "optional",
+                "internal_mapping": "postal_code"
+            },
+            "Country code": {
+                "name": "Country code",
+                "requirement": "optional",
+                "internal_mapping": "country_code"
+            }
+        }
+    },
+    "UNT": {
+        "name": "Message Trailer - UNT",
+        "elements": {
+            "0074": {
+                "name": "Number of Segments",
+                "requirement": "Mandatory",
+                "internal_mapping": "number_of_segments"
+            },
+            "0062": {
+                "name": "Message Reference Number",
+                "requirement": "Mandatory",
+                "internal_mapping": "message_reference_number"
+            }
+        }
+    },
+    "LIN": {
+        "name": "Line Item",
+        "elements": {
+            "Line item number": {
+                "name": "Line item number",
+                "requirement": "optional",
+                "internal_mapping": "line_item_number"
+            },
+            "Product/Service ID": {
+                "name": "Product/Service ID",
+                "requirement": "optional",
+                "internal_mapping": "product_service_id"
+            },
+            "Item Description": {
+                "name": "Item Description",
+                "requirement": "optional",
+                "internal_mapping": "item_description"
+            },
+            "Product Identification": {
+                "name": "Product Identification",
+                "requirement": "optional",
+                "internal_mapping": "product_identification"
+            }
+        }
+    },
+    "CTA": {
+        "name": "Contact Information",
+        "elements": {
+            "Contact function code qualifier": {
+                "name": "Contact function code qualifier",
+                "requirement": "mandatory",
+                "internal_mapping": "contact_function_code"
+            },
+            "Contact person's name": {
+                "name": "Contact person's name",
+                "requirement": "optional",
+                "internal_mapping": "contact_name"
+            }
+        }
+    },
+    "MEA": {
+        "name": "Measurements",
+        "elements": {
+            "Measurement type code": {
+                "name": "Measurement type code",
+                "requirement": "mandatory",
+                "internal_mapping": "measurement_type_code"
+            },
+            "Measurement qualifier": {
+                "name": "Measurement qualifier",
+                "requirement": "optional",
+                "internal_mapping": "measurement_qualifier"
+            },
+            "Measurement value": {
+                "name": "Measurement value",
+                "requirement": "optional",
+                "internal_mapping": "measurement_value"
+            }
+        }
+    },
+    "QTY": {
+        "name": "Quantity",
+        "elements": {
+            "Quantity qualifier": {
+                "name": "Quantity qualifier",
+                "requirement": "mandatory",
+                "internal_mapping": "quantity_qualifier"
+            },
+            "Quantity": {
+                "name": "Quantity",
+                "requirement": "mandatory",
+                "internal_mapping": "quantity"
+            },
+            "Unit of measurement": {
+                "name": "Unit of measurement",
+                "requirement": "mandatory",
+                "internal_mapping": "unit_of_measurement"
+            }
+        }
+    },
+    "MOA": {
+        "name": "Monetary Amount",
+        "elements": {
+            "Monetary amount type": {
+                "name": "Monetary amount type",
+                "requirement": "mandatory",
+                "internal_mapping": "monetary_amount_type"
+            },
+            "Monetary amount": {
+                "name": "Monetary amount",
+                "requirement": "mandatory",
+                "internal_mapping": "monetary_amount"
+            }
+        }
+    },
+    "PRI": {
+        "name": "Price Details",
+        "elements": {
+            "Price type": {
+                "name": "Price type",
+                "requirement": "mandatory",
+                "internal_mapping": "price_type"
+            },
+            "Price amount": {
+                "name": "Price amount",
+                "requirement": "mandatory",
+                "internal_mapping": "price_amount"
+            }
+        }
+    },
+    "UNS": {
+        "name": "Segment Group",
+        "elements": {
+            "Segment group indicator": {
+                "name": "Segment group indicator",
+                "requirement": "mandatory",
+                "internal_mapping": "segment_group_indicator"
+            }
+        }
+    },
+    "UNB": {
+        "name": "Interchange Header - UNB",
+        "elements": {
+            "Syntax identifier and version": {
+                "name": "Syntax identifier and version",
+                "requirement": "mandatory",
+                "internal_mapping": "syntax_identifier_version"
+            },
+            "Sender's identification and qualifier": {
+                "name": "Sender's identification and qualifier",
+                "requirement": "mandatory",
+                "internal_mapping": "sender_id_qualifier"
+            },
+            "Receiver's identification and qualifier": {
+                "name": "Receiver's identification and qualifier",
+                "requirement": "mandatory",
+                "internal_mapping": "receiver_id_qualifier"
+            },
+            "Date and time of preparation": {
+                "name": "Date and time of preparation",
+                "requirement": "mandatory",
+                "internal_mapping": "date_time_preparation"
+            },
+            "Interchange control number": {
+                "name": "Interchange control number",
+                "requirement": "mandatory",
+                "internal_mapping": "interchange_control_number"
+            },
+            "Agreement or message version and revision number": {
+                "name": "Agreement or message version and revision number",
+                "requirement": "optional",
+                "internal_mapping": "agreement_message_version"
+            }
+        }
+    },
+    "IMD": {
+        "name": "Item Description",
+        "elements": {
+            "1": {
+                "name": "Description format",
+                "requirement": "Mandatory",
+                "internal_mapping": "description_format"
+            },
+            "2": {
+                "name": "Description type",
+                "requirement": "Optional",
+                "internal_mapping": "description_type"
+            },
+            "3": {
+                "name": "Description code",
+                "requirement": "Optional",
+                "internal_mapping": "description_code"
+            },
+            "4": {
+                "name": "Item description",
+                "requirement": "Mandatory",
+                "internal_mapping": "item_description"
+            },
+            "5": {
+                "name": "Item description code",
+                "requirement": "Optional",
+                "internal_mapping": "item_description_code"
+            }
+        }
+    }
+}

@@ -1,0 +1,248 @@
+{
+    "UNA": {
+        "name": "Service String Advice - UNA",
+        "elements": {
+            "101": {
+                "name": "Decimal point",
+                "requirement": "Mandatory"
+            },
+            "102": {
+                "name": "Segment terminator",
+                "requirement": "Mandatory"
+            },
+            "103": {
+                "name": "Data element separator",
+                "requirement": "Mandatory"
+            },
+            "104": {
+                "name": "Release indicator",
+                "requirement": "Mandatory"
+            },
+            "105": {
+                "name": "Sub-element separator",
+                "requirement": "Mandatory"
+            }
+        }
+    },
+    "UNH": {
+        "name": "Message Header - UNH",
+        "elements": {
+            "S009": {
+                "name": "Message Reference Number",
+                "requirement": "Mandatory"
+            },
+            "S010": {
+                "name": "Message Type",
+                "requirement": "Mandatory"
+            }
+        }
+    },
+    "BGM": {
+        "name": "Beginning of Message - BGM",
+        "elements": {
+            "C002": {
+                "name": "Document/Message Number",
+                "requirement": "Mandatory"
+            },
+            "C080": {
+                "name": "Document Message Name",
+                "requirement": "Mandatory"
+            }
+        }
+    },
+    "DTM": {
+        "name": "Date/Time/Period - DTM",
+        "elements": {
+            "C507": {
+                "name": "Date/Time/Period",
+                "requirement": "Mandatory"
+            }
+        }
+    },
+    "NAD": {
+        "name": "Name and Address",
+        "elements": {
+            "Party function code qualifier": {
+                "name": "Party function code qualifier",
+                "requirement": "mandatory"
+            },
+            "Identification code": {
+                "name": "Identification code",
+                "requirement": "mandatory"
+            },
+            "Code list qualifier and code list responsible agency code": {
+                "name": "Code list qualifier and code list responsible agency code",
+                "requirement": "optional"
+            },
+            "Name": {
+                "name": "Name",
+                "requirement": "mandatory"
+            },
+            "Address line 1": {
+                "name": "Address line 1",
+                "requirement": "optional"
+            },
+            "City": {
+                "name": "City",
+                "requirement": "optional"
+            },
+            "State or province": {
+                "name": "State or province",
+                "requirement": "optional"
+            },
+            "Postal code": {
+                "name": "Postal code",
+                "requirement": "optional"
+            },
+            "Country code": {
+                "name": "Country code",
+                "requirement": "optional"
+            }
+        }
+    },
+    "UNT": {
+        "name": "Message Trailer - UNT",
+        "elements": {
+            "0074": {
+                "name": "Number of Segments",
+                "requirement": "Mandatory"
+            },
+            "0062": {
+                "name": "Message Reference Number",
+                "requirement": "Mandatory"
+            }
+        }
+    },
+    "LIN": {
+        "name": "Line Item",
+        "elements": {
+            "Line item number": {
+                "name": "Line item number",
+                "requirement": "optional"
+            },
+            "Product/Service ID": {
+                "name": "Product/Service ID",
+                "requirement": "optional"
+            },
+            "Item Description": {
+                "name": "Item Description",
+                "requirement": "optional"
+            },
+            "Product Identification": {
+                "name": "Product Identification",
+                "requirement": "optional"
+            }
+        }
+    },
+    "CTA": {
+        "name": "Contact Information",
+        "elements": {
+            "Contact function code qualifier": {
+                "name": "Contact function code qualifier",
+                "requirement": "mandatory"
+            },
+            "Contact person's name": {
+                "name": "Contact person's name",
+                "requirement": "optional"
+            }
+        }
+    },
+    "MEA": {
+        "name": "Measurements",
+        "elements": {
+            "Measurement type code": {
+                "name": "Measurement type code",
+                "requirement": "mandatory"
+            },
+            "Measurement qualifier": {
+                "name": "Measurement qualifier",
+                "requirement": "optional"
+            },
+            "Measurement value": {
+                "name": "Measurement value",
+                "requirement": "optional"
+            }
+        }
+    },
+    "QTY": {
+        "name": "Quantity",
+        "elements": {
+            "Quantity qualifier": {
+                "name": "Quantity qualifier",
+                "requirement": "mandatory"
+            },
+            "Quantity": {
+                "name": "Quantity",
+                "requirement": "mandatory"
+            },
+            "Unit of measurement": {
+                "name": "Unit of measurement",
+                "requirement": "mandatory"
+            }
+        }
+    },
+    "MOA": {
+        "name": "Monetary Amount",
+        "elements": {
+            "Monetary amount type": {
+                "name": "Monetary amount type",
+                "requirement": "mandatory"
+            },
+            "Monetary amount": {
+                "name": "Monetary amount",
+                "requirement": "mandatory"
+            }
+        }
+    },
+    "PRI": {
+        "name": "Price Details",
+        "elements": {
+            "Price type": {
+                "name": "Price type",
+                "requirement": "mandatory"
+            },
+            "Price amount": {
+                "name": "Price amount",
+                "requirement": "mandatory"
+            }
+        }
+    },
+    "UNS": {
+        "name": "Segment Group",
+        "elements": {
+            "Segment group indicator": {
+                "name": "Segment group indicator",
+                "requirement": "mandatory"
+            }
+        }
+    },
+    "UNB": {
+        "name": "Interchange Header - UNB",
+        "elements": {
+            "Syntax identifier and version": {
+                "name": "Syntax identifier and version",
+                "requirement": "mandatory"
+            },
+            "Sender's identification and qualifier": {
+                "name": "Sender's identification and qualifier",
+                "requirement": "mandatory"
+            },
+            "Receiver's identification and qualifier": {
+                "name": "Receiver's identification and qualifier",
+                "requirement": "mandatory"
+            },
+            "Date and time of preparation": {
+                "name": "Date and time of preparation",
+                "requirement": "mandatory"
+            },
+            "Interchange control number": {
+                "name": "Interchange control number",
+                "requirement": "mandatory"
+            },
+            "Agreement or message version and revision number": {
+                "name": "Agreement or message version and revision number",
+                "requirement": "optional"
+            }
+        }
+    }
+}
